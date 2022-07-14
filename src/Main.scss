@@ -1,0 +1,63 @@
+.title {
+    margin: 30px auto 10px;
+}
+
+.body{
+    display: table;
+    text-align: center;
+    border-collapse: separate;
+    margin: 0 auto 30px;
+}
+
+.header {
+    display: table-row;
+    > div {
+        display: table-cell;
+        border-bottom: 1px solid #ccc;
+        background: #bababa;
+        color: #e5e5e5;
+        font-weight: 700;
+        padding: 10px;
+    }
+    &:first-child{
+        border-left: 1px solid #ccc;
+        border-top-left-radius: 5px;
+    }
+    &:last-child{
+        border-right: 1px solid #ccc;
+        border-top-right-radius: 5px;
+    }
+}
+
+.item{
+    display: table-row;
+    >div{
+        display: table-cell;
+        padding: 10px;
+    }
+    &:nth-child(2n+3){
+        background-color: #e9e9ee;
+    }
+}
+.name {
+    border-left: 1px solid #ccc;
+}
+.gender {
+    border-right: 1px solid #ccc;
+}
+.pagination{
+    display: flex;
+    margin: 20px auto 0;
+}
+.pagi-item {
+    min-width: 15px;
+    padding: 3px 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    &:not(:last-child) {
+        margin-right: 5px;
+    }
+    &.active{
+        background: #ccc;
+    }
+}
